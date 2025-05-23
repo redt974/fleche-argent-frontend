@@ -1,0 +1,278 @@
+/* Styles pour la bannière et le contenu */
+.rest-banner {
+    position: relative;
+    width: 100%;
+    height: 700px; /* Hauteur de la bannière */
+    overflow: hidden; /* Empêche le débordement de la vidéo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rest-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* La vidéo occupe tout l'espace sans déformation */
+    z-index: -1; /* Place la vidéo derrière le texte */
+}
+
+.rest-banner-title {
+    position: absolute;
+    bottom: 20px; /* Distance par rapport au bas de la bannière */
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ajout d'une ombre pour une meilleure lisibilité */
+}
+
+.rest-content {
+    max-width: 1200px; /* Largeur maximale alignée avec la page d'accueil */
+    margin: 50px auto; /* Centre le contenu horizontalement et ajoute un espace en haut */
+    padding: 0 20px; /* Ajoute un espace intérieur aux côtés */
+    font-size: 1.1rem;
+}
+
+.rest-description {
+    text-align: justify; /* Texte justifié pour une présentation élégante */
+    line-height: 1.8; /* Espacement entre les lignes pour améliorer la lisibilité */
+    color: #333; /* Couleur du texte */
+}
+
+/* Styles pour le bouton de réservation */
+.rest-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; /* Espace au-dessus du bouton */
+}
+
+.rest-button {
+    background-color: transparent; /* Arrière-plan transparent par défaut */
+    color: rgb(199, 172, 113); /* Couleur du texte et de la bordure */
+    padding: 15px 30px; /* Taille du bouton */
+    font-size: 1rem;
+    border: 1px solid rgb(199, 172, 113); /* Bordure de la même couleur que le texte */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Ombre pour l'effet de profondeur */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Animation pour l'effet au survol */
+}
+
+.rest-button:hover {
+    background-color: rgb(199, 172, 113); /* Couleur d'arrière-plan au survol */
+    color: white; /* Texte blanc au survol */
+    border: 1px solid white; /* Bordure blanche au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+/* Styles pour la carte */
+.rest-card {
+    background-color: bisque; /* Fond blanc */
+    border: 1px solid #ddd; /* Bordure subtile */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+    max-width: 700px; /* Largeur maximale de la carte */
+    margin: 50px auto; /* Centrer la carte et ajouter un espace au-dessus */
+    padding: 20px; /* Espacement interne */
+}
+
+.rest-card-title {
+    font-size: 1.5rem;
+    color: rgb(199, 172, 113); /* Couleur dorée */
+    margin-bottom: 15px; /* Espacement sous le titre */
+    text-align: center; /* Centrer le titre */
+}
+
+.rest-card-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333; /* Couleur du texte */
+    text-align: justify; /* Texte justifié */
+}
+
+/* Styles pour les boutons en deux volets */
+.rest-card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Espace entre le contenu et les boutons */
+}
+
+.rest-card-button {
+    flex: 1; /* Les boutons prennent une largeur égale */
+    text-align: center; /* Centrer le texte */
+    padding: 15px;
+    margin: 0 10px; /* Espacement entre les boutons */
+    background-color: rgb(255, 255, 255); /* Couleur blanche */
+    color: rgb(199, 172, 113); /* Texte doré */
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rest-card-button:hover {
+    background-color: rgb(199, 172, 113); /* Fond doré au survol */
+    color: rgb(255, 255, 255); /* Texte blanc au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Ombre accentuée */
+}
+
+.rest-card-button.left,
+.rest-card-button.right {
+    border: 2px solid rgb(199, 172, 113); /* Bordure dorée */
+}
+
+/* Styles pour le slider */
+.rest-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px; /* Espacement entre la carte et le slider */
+}
+
+.rest-slider-images {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.rest-slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Imposer un format rectangulaire à l'image */
+}
+
+.rest-slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.rest-slider-button {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rest-slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Styles pour les horaires */
+.rest-hours {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rest-hours h3 {
+    font-size: 1.5rem;
+    color: rgb(199, 172, 113);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.rest-hours-item {
+    margin-bottom: 20px;
+}
+
+.rest-hours-item strong {
+    font-size: 1.2rem;
+    color: rgb(199, 172, 113);
+}
+
+.rest-hours-item p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+/* Styles pour l'équipe */
+.rest-team {
+    margin-top: 30px;
+}
+
+.rest-team-chef,
+.rest-team-somm {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rest-team-chef {
+    flex-direction: row-reverse; /* Chef à droite */
+}
+
+.rest-team-somm {
+    flex-direction: row; /* Sommellerie à gauche */
+}
+
+.rest-team-text {
+    flex: 1;
+    padding: 10px;
+}
+
+.rest-team-text h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.rest-team-text h5 {
+    font-size: 1.2rem;
+    color: rgb(199, 172, 113);
+    margin-bottom: 10px;
+}
+
+.rest-team-text p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.rest-team-image {
+    width: 40%;
+    border-radius: 10px;
+}
+/* Responsive : En dessous de 500px */
+@media (max-width: 500px) {
+    .rest-team-chef,
+    .rest-team-somm {
+        flex-direction: column; /* Arrange chaque section verticalement */
+        align-items: center;   /* Centre les éléments horizontalement */
+    }
+
+    .rest-team-text {
+        text-align: center; /* Centre le texte */
+        margin-bottom: 10px; /* Espace sous le texte */
+    }
+
+    .rest-team-image {
+        width: 100%; /* L'image occupe toute la largeur */
+        border-radius: 10px; /* Coins arrondis pour les images */
+        margin-bottom: 20px; /* Espacement entre les images et les sections suivantes */
+    }
+
+    /* Ordre spécifique pour avoir texte > image */
+    .rest-team-chef {
+        flex-direction: column;
+    }
+
+    .rest-team-somm {
+        flex-direction: column;
+    }
+}

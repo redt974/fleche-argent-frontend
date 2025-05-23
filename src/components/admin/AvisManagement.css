@@ -1,0 +1,46 @@
+.avis-management {
+    padding: 20px;
+  }
+  
+  .avis-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .avis-table th,
+  .avis-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .avis-table th {
+    text-align: left;
+  }
+  
+  .avis-actions button {
+    cursor: pointer;
+  }
+  
+  .popup {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .popup h2 {
+    margin-bottom: 20px;
+  }
+  
+  .popup button {
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+  
+  .popup button:last-child {
+    margin-right: 0;
+  }
+  

@@ -1,0 +1,278 @@
+.spa-image-reduced {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+.spa-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    text-align: center;
+    padding: 0 15px;
+}
+
+
+.spa-text-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 0 15px;
+    max-width: 600px;
+}
+
+.spa-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+    white-space: pre-line;
+}
+
+
+.spa-rectangle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+
+.spa-rectangle {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 18%;
+    /* Par défaut : 5 rectangles en ligne */
+    min-width: 200px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.spa-rectangle p {
+    margin: 0;
+}
+
+/* Bouton centré */
+.spa-button-container {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.spa-button {
+    background-color: #b89c68;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.spa-button:hover {
+    background-color: #a18559;
+}
+
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.massage-image {
+    display: block;
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.massage-left-box {
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    max-width: 300px;
+}
+
+
+.massage-left-box h2 {
+    font-size: 1.8rem;
+    color: #a57719;
+    margin-bottom: 15px;
+}
+
+.massage-left-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Conteneur de contact (massage-contact-box) */
+.massage-contact-box {
+    position: relative;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    z-index: 0;
+}
+
+/* Media Queries pour responsivité */
+@media (max-width: 1024px) {
+    .massage-left-box {
+        position: static;
+        transform: none;
+        margin: 20px auto;
+        max-width: 90%;
+    }
+
+    .massage-contact-box {
+        padding: 15px;
+        max-width: 100%;
+    }
+}
+
+.massage-contact-box h4 {
+    font-size: 1.2rem;
+    color: #a57719;
+    margin-bottom: 10px;
+}
+
+.massage-contact-box p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #333;
+}
+
+.massage-contact-box div {
+    width: 45%;
+}
+
+/* Bouton fixe */
+.massage-contact-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #827b6d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------
+     Media Queries pour Responsive
+  ------------------------------ */
+
+
+@media (max-width: 1024px) {
+    .spa-rectangle {
+        width: 30%;
+    }
+
+    .massage-contact-box div {
+        width: 100%;
+    }
+
+    .spa-header {
+        font-size: 2rem;
+    }
+
+    .massage-image {
+        width: 70%;
+    }
+
+    .massage-left-box {
+        position: static;
+        transform: none;
+        margin: 20px auto;
+        max-width: 90%;
+    }
+
+    .massage-contact-box {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .spa-rectangle {
+        width: 45%;
+    }
+
+    .spa-header {
+        font-size: 1.8rem;
+        padding: 0 10px;
+    }
+
+    .spa-text-container {
+        padding: 0 10px;
+    }
+
+    .massage-left-box {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    .massage-image {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .spa-rectangle {
+        width: 90%;
+    }
+
+    .spa-header {
+        font-size: 1.5rem;
+    }
+
+    .massage-contact-box {
+        flex-direction: column;
+    }
+
+    .massage-contact-box div {
+        width: 100%;
+    }
+
+    .massage-image {
+        width: 100%;
+    }
+
+    .spa-text-container {
+        font-size: 1rem;
+    }
+}

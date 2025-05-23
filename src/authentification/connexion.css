@@ -1,0 +1,114 @@
+.formauth {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formauth h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .formauth label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  .formauth input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .formauth input[type="checkbox"] {
+    width: auto;
+  }
+  
+  .formauth .rememberMe {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    cursor: pointer;
+  }
+  
+  .formauth button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  .formauth button:hover {
+    background-color: #0056b3;
+  }
+  
+  .formauth a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9rem;
+  }
+  
+  .formauth a:hover {
+    text-decoration: underline;
+  }
+  
+  .formauth .switch-page {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .formauth .divider-wrapper {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .formauth .divider {
+    border-top: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 0.9rem;
+  }
+  
+  .formauth .juridique {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  
+  .formauth .juridique a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .formauth .juridique p {
+    display: inline;
+    margin: 0 5px;
+    color: #666;
+  }
+  
+  .formauth .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .formauth .alert-message {
+    color: orange;
+  }
+  
+  .formauth .error-message {
+    color: red;
+  }
+  
+  .formauth .success-message {
+    color: green;
+  }
+  

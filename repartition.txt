@@ -1,0 +1,156 @@
+fleche-argent-frontend/src
+├── App.js -- Tout le monde
+├── authentification
+│   ├── AuthContext.js -- Thibaut
+│   ├── connexion.css -- Miranto
+│   ├── connexion.js -- Thibaut
+│   ├── deconnexion.js -- Thibaut
+│   ├── index.css  -- Miranto
+│   ├── inscription.css -- Miranto
+│   ├── inscription.js -- Thibaut
+│   ├── middleware.js -- Thibaut
+│   ├── motdepasse_oublie.js -- Thibaut
+│   ├── reinitialisation.js -- Thibaut
+│   └── validation.js -- Thibaut
+├── components
+│   ├── admin
+│   │   ├── AdminContent.css -- Stevens
+│   │   ├── AdminContent.jsx -- Stevens
+│   │   ├── AdminSidebar.css -- Stevens
+│   │   ├── AdminSidebar.jsx -- Stevens
+│   │   ├── AvisManagement.css -- Stevens
+│   │   ├── AvisManagement.jsx -- Stevens
+│   │   ├── ChartComponent.jsx -- Stevens
+│   │   ├── ContactManagement.jsx -- Stevens
+│   │   ├── Dashboard.css -- Stevens
+│   │   ├── ReservationManagement.jsx -- Stevens
+│   │   └── UserManagement.jsx -- Stevens
+│   ├── Avis
+│   │   ├── AvisForm.css -- Stevens
+│   │   └── AvisForm.jsx -- Stevens
+│   ├── buttons
+│   │   ├── index.css -- Thibaut
+│   │   └── index.js -- Thibaut
+│   ├── calendar
+│   │   ├── css
+│   │   │   └── index.css -- Miranto
+│   │   └── index.js -- Miranto
+│   ├── calendrier
+│   │   ├── css
+│   │   │   └── index.css -- Miranto
+│   │   └── index.js -- Miranto
+│   ├── contact
+│   │   ├── contactform.jsx -- Stevens
+│   │   └── index.css -- Emrys
+│   ├── cookies
+│   │   ├── index.css -- Thibaut
+│   │   └── index.js -- Thibaut
+│   ├── expires
+│   │   ├── index.css -- Thibaut
+│   │   └── index.js -- Thibaut
+│   ├── footer
+│   │   ├── css
+│   │   │   └── index.css -- Emrys
+│   │   └── index.js -- Emrys
+│   ├── google
+│   │   ├── assets
+│   │   │   └── google.svg
+│   │   ├── index.css -- Thibaut
+│   │   ├── index.js -- Thibaut
+│   │   └── redirect
+│   │       ├── index.css -- Thibaut
+│   │       └── index.js -- Thibaut
+│   ├── header
+│   │   ├── css
+│   │   │   └── index.css -- Emrys
+│   │   ├── images
+│   │   │   └── logo.png
+│   │   └── index.js -- Emrys
+│   ├── loading
+│   │   ├── index.css -- Thibaut
+│   │   └── index.js -- Thibaut
+│   ├── response
+│   │   ├── index.css -- Thibaut
+│   │   └── index.js -- Thibaut
+│   ├── User
+│   │   ├── Usereservation.css -- Emrys
+│   │   ├── Usereservation.jsx -- Stevens
+│   │   ├── Userinfo.css -- Emrys
+│   │   ├── Userinfo.jsx -- Stevens
+│   │   ├── Userpage.css -- Emrys
+│   │   └── Userpage.jsx -- Stevens
+│   └── verify
+│       ├── index.css -- Thibaut
+│       └── index.js -- Thibaut
+├── index.css
+├── index.js -- Thibaut
+├── juridique
+│   ├── condition.js -- Thibaut
+│   ├── index.css -- Thibaut
+│   └── politique.js -- Thibaut
+├── pages
+│   ├── Accueil -- Emrys
+│   │   ├── css
+│   │   │   └── index.css -- Emrys
+│   │   ├── hooks
+│   │   │   └── useScrollAnimation.js -- Emrys
+│   │   ├── images
+│   │   │   ├── image1.png
+│   │   │   ├── image2.png
+│   │   │   ├── image3.png
+│   │   │   └── image4.png
+│   │   ├── index.js -- Emrys
+│   │   ├── svg
+│   │   │   ├── arrow-left.svg
+│   │   │   ├── arrow-right.svg
+│   │   │   ├── calendar.svg
+│   │   │   └── person.svg
+│   │   └── videos
+│   │       └── intro-video.mp4
+│   ├── Admin
+│   │   ├── admin.css -- Stevens
+│   │   └── admin.js -- Stevens
+│   ├── Avis
+│   │   └── avis.js -- Stevens
+│   ├── chambres
+│   │   ├── css
+│   │   │   └── index.css -- Miranto
+│   │   └── index.js -- Miranto
+│   ├── Contact
+│   │   └── contact.js -- Stevens
+│   ├── Error
+│   │   ├── ErrorBoundary.js -- Thibaut
+│   │   ├── index.css -- Thibaut
+│   │   └── index.js -- Thibaut
+│   ├── Restauration
+│   │   ├── css
+│   │   │   └── index.css -- Emrys
+│   │   ├── images
+│   │   │   ├── chef.jpg
+│   │   │   ├── fleche-argent.png
+│   │   │   ├── restaurant2.jpg
+│   │   │   ├── restaurant.jpg
+│   │   │   ├── slide-image2.jpg
+│   │   │   ├── slide-image3.jpg
+│   │   │   ├── slide-image4.jpg
+│   │   │   ├── slide-image5.jpg
+│   │   │   ├── slide-image5.webp
+│   │   │   ├── slide-image6.jpeg
+│   │   │   ├── slide-image.jpg
+│   │   │   └── sommellerie.jpg
+│   │   ├── index.js -- Emrys
+│   │   ├── pdf
+│   │   │   ├── menu-bar.pdf
+│   │   │   └── menu-rest.pdf
+│   │   └── videos
+│   │       └── restaurant1.mp4
+│   ├── Spa
+│   │   ├── images
+│   │   │   ├── spa1.png
+│   │   │   └── spa2.png
+│   │   ├── index.css -- El Mehdi
+│   │   └── index.js -- El Mehdi
+│   └── User
+│       └── user.js -- Stevens
+└── services
+    └── api.js -- Thibaut

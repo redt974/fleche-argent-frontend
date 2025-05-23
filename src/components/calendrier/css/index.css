@@ -1,0 +1,187 @@
+/* Conteneur principal */
+.reservation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Modal avec fond flou */
+.reservation-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond sombre semi-transparent */
+  backdrop-filter: blur(8px); /* Effet de flou */
+  z-index: 1000;
+}
+
+/* Contenu du modal */
+.reservation-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 0;
+  width: 400px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre du modal */
+  z-index: 1001;
+}
+
+/* Bouton fermer */
+.close-modal-button {
+  background-color: #d4af37;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border-radius: 50%; /* Bouton rond */
+}
+
+.close-modal-button:hover {
+  background-color: #b8922e;
+}
+
+/* Bouton d'ouverture */
+.open-modal-button {
+  background-color: #d4af37;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+.open-modal-button:hover {
+  background-color: #b8922e;
+}
+
+/* Boutons personnalisés */
+button {
+  background-color: #d4af37;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+/* Boutons au survol */
+button:hover {
+  background-color: #b8922e;
+}
+
+/* Boutons désactivés */
+button:disabled {
+  background-color: #f0e5c9;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Titre de la section */
+.step-title {
+  text-align: center;
+  font-size: 24px;
+  color: #d4af37; /* Doré pour le titre */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Conteneur pour la sélection des types */
+.type-selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Boutons pour chaque type de service */
+.type-button,
+.hotel-button,
+.spa-button,
+.restaurant-button {
+  background-color: #fff; /* Fond blanc pour les boutons */
+  color: #d4af37; /* Texte doré */
+  border: 2px solid #d4af37; /* Bordure dorée */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0; /* Pas de border-radius */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.type-button:hover,
+.hotel-button:hover,
+.spa-button:hover,
+.restaurant-button:hover {
+  background-color: #d4af37; /* Fond doré au survol */
+  color: white; /* Texte blanc au survol */
+  transform: scale(1.05); /* Légère agrandissement au survol */
+}
+
+/* Bouton "Précédent" */
+.previous-step-button {
+  background-color: #fff;
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.previous-step-button:hover {
+  background-color: #d4af37;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Bouton "Suivant" */
+.next-step-button {
+  background-color: #d4af37;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.next-step-button:hover {
+  background-color: #b8922e;
+  transform: scale(1.05);
+}
+
+.next-step-button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.btn-option {
+  color: black;
+}

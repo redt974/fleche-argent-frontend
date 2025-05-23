@@ -1,0 +1,326 @@
+/* Conteneur principal */
+.formauth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre */
+.formauth h2 {
+  color: #d4af37; /* Doré */
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Champs de formulaire */
+.formauth form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formauth label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.formauth input {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #d4af37; /* Bordure dorée */
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+}
+
+.formauth input:focus {
+  border-color: #b8922e; /* Doré plus foncé */
+  box-shadow: 0 0 5px rgba(216, 175, 55, 0.5);
+}
+
+/* Lien "Mot de passe oublié" */
+.formauth a {
+  color: #d4af37;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.formauth a:hover {
+  color: #b8922e;
+}
+
+/* Checkbox "Rester connecté" */
+.rememberMe {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rememberMe input {
+  margin-right: 10px;
+}
+
+.rememberMe label {
+  font-size: 14px;
+  color: #333;
+}
+
+/* ReCAPTCHA */
+.formauth .g-recaptcha {
+  margin-bottom: 20px;
+}
+
+/* Bouton de soumission */
+.formauth button {
+  background-color: #d4af37;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formauth button:hover {
+  background-color: #b8922e;
+}
+
+/* Messages d'erreur ou de succès */
+.formauth p {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.formauth p.green {
+  color: green;
+}
+
+.formauth p.red {
+  color: red;
+}
+
+.formauth p.orange {
+  color: orange;
+}
+
+/* Section "Switch page" */
+.switch-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.switch-page p {
+  font-size: 14px;
+  color: #333;
+}
+
+.switch-page a {
+  color: #d4af37;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.switch-page a:hover {
+  color: #b8922e;
+}
+
+/* Diviseur */
+.divider-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.divider {
+  font-size: 14px;
+  color: #d4af37;
+}
+
+/* Intégration des services externes */
+.google-button {
+  margin-top: 20px;
+  background-color: #4285f4;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.google-button:hover {
+  background-color: #3367d6;
+}
+
+/* Liens juridiques */
+.juridique {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.juridique a {
+  color: #d4af37;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.juridique a:hover {
+  color: #b8922e;
+}
+
+.juridique p {
+  font-size: 14px;
+  color: #333;
+  margin: 0 10px;
+}
+
+/* Conteneur principal */
+.formulaire.inscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 80px 20px 20px; /* Ajout d'un padding en haut pour l'espace */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Titre */
+  .formulaire.inscription h2 {
+    color: #d4af37; /* Doré */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Champs de formulaire */
+  .formulaire.inscription form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .formulaire.inscription label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .formulaire.inscription input {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #d4af37; /* Bordure dorée */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+  }
+  
+  .formulaire.inscription input:focus {
+    border-color: #b8922e; /* Doré plus foncé */
+    box-shadow: 0 0 5px rgba(216, 175, 55, 0.5);
+  }
+  
+  /* Lien "Déjà un compte ?" */
+  .formulaire.inscription a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .formulaire.inscription a:hover {
+    color: #b8922e;
+  }
+  
+  /* ReCAPTCHA */
+  .formulaire.inscription .g-recaptcha {
+    margin-bottom: 20px;
+  }
+  
+  /* Bouton de soumission */
+  .formulaire.inscription button {
+    background-color: #d4af37;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .formulaire.inscription button:hover {
+    background-color: #b8922e;
+  }
+  
+  /* Messages d'erreur ou de succès */
+  .formulaire.inscription p {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .formulaire.inscription p.green {
+    color: green;
+  }
+  
+  .formulaire.inscription p.red {
+    color: red;
+  }
+  
+  .formulaire.inscription p.orange {
+    color: orange;
+  }
+  
+  /* Section "Juridique" */
+  .juridique {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .juridique a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .juridique a:hover {
+    color: #b8922e;
+  }
+  
+  .juridique p {
+    font-size: 14px;
+    color: #333;
+    margin: 0 10px;
+  }
+  

@@ -1,0 +1,69 @@
+/* Style */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; /* Police d'Apple et fallback */
+  background-color: rgb(255, 255, 255); /* Couleur de fond personnalisée */
+  color: rgb(47, 47, 47); /* Couleur principale du texte */
+  -webkit-font-smoothing: antialiased; /* Meilleure lisibilité pour les polices */
+  -moz-osx-font-smoothing: grayscale; /* Meilleure lisibilité pour les polices */
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; /* Police pour les blocs de code */
+}
+
+
+/* Styles pour les éléments permettant de changer de page (par exemple, "Connexion" / "Inscription") */
+.switch-page {
+  display: flex;
+  gap: 7px;
+}
+
+/* Styles pour les lignes de séparation avec du texte au centre */
+.divider-wrapper {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  border: none;
+  font-size: 12px;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  width: 303px;
+  vertical-align: baseline;
+  margin: 24px 0;
+}
+
+/* Styles pour les parties avant et après la ligne de séparation */
+.divider-wrapper:before,
+.divider-wrapper:after {
+  content: "";
+  border-bottom: 1px solid var(--white);
+  flex: 1 0 auto;
+  height: .5em;
+  margin: 0;
+}
+
+/* Styles pour le texte au centre des lignes de séparation */
+.divider {
+  text-align: center;
+  flex: .2 0 auto;
+  margin: 0;
+  height: 12px;
+}
+
+/* Styles pour les informations juridiques en bas de page */
+.juridique {
+  text-align: center;
+  padding: 24px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  gap: 0 8px;
+}

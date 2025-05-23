@@ -1,0 +1,280 @@
+/* Style de la vidéo en arrière-plan */
+video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  /* Style de la bannière horizontale */
+  .banner {
+    background-color: rgba(248, 232, 212, 0.677);
+    color: gray;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Box de 3 colonnes dans la bannière */
+  .banner-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: rgba(248, 232, 212, 0.8);
+    cursor: pointer;
+    width: 90%; /* Réduction de la largeur de la boîte de 10% */
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(0, 0, 0); /* Bordure solide de couleur rgb(199, 172, 113) */
+  }
+  
+  .banner-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Contenu sur une seule ligne */
+  }
+  
+  .banner-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row; /* Contenu sur une seule ligne */
+  }
+  
+  .banner-item .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 0px; /* Espacement à droite des icônes */
+    margin-left: 5px; /* Décalage de la flèche légèrement vers la droite */
+  }
+  
+  .banner-item span {
+    margin-left: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+  }
+  
+  /* Conteneur principal */
+  .content-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /* Disposition et espacement des sections */
+  .content-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 0 10%;
+  }
+  
+  /* Style des images dans chaque section */
+  .image-content img {
+    width: 40%;
+    height: auto;
+  }
+  
+  /* Classes spécifiques pour le texte */
+  .text-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: rgb(199, 172, 113);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+  
+  .text-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+  
+  .text-paragraph {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  /* Définir l'ordre des éléments texte et image dans chaque section */
+  .content-div:nth-child(1) .text-content {
+    order: 1;
+  }
+  
+  .content-div:nth-child(1) .image-content {
+    order: 2;
+  }
+  
+  .content-div:nth-child(2) .text-content {
+    order: 2;
+  }
+  
+  .content-div:nth-child(2) .image-content {
+    order: 1;
+  }
+  
+  .content-div:nth-child(3) .text-content {
+    order: 1;
+  }
+  
+  .content-div:nth-child(3) .image-content {
+    order: 2;
+  }
+  
+  .content-div:nth-child(4) .text-content {
+    order: 2;
+  }
+  
+  .content-div:nth-child(4) .image-content {
+    order: 1;
+  }
+  
+  /* Assurer que le texte et l'image occupent environ la moitié de la largeur */
+  .content-div .text-content,
+  .content-div .image-content {
+    width: 48%;
+  }
+  
+  /* Style des boutons */
+  .btn-accueil {
+    background-color: #7e7e7e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-accueil:hover {
+    background-color: rgb(199, 172, 113);
+  }
+  
+  /* Importation des polices et application aux éléments */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap');
+  
+  /* Style des images pour s'assurer qu'elles s'ajustent correctement */
+  .image-content img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Animation de glissement */
+  .scroll-animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .scroll-animation.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Animations spécifiques pour gauche et droite */
+  .scroll-animation-left {
+    transform: translateX(-50px);
+  }
+  
+  .scroll-animation-left.visible {
+    transform: translateX(0);
+  }
+  
+  .scroll-animation-right {
+    transform: translateX(50px);
+  }
+  
+  .scroll-animation-right.visible {
+    transform: translateX(0);
+  }
+  /* Réorganiser les éléments pour les écrans de moins de 500px et centrer le contenu */
+@media (max-width: 500px) {
+  /* Modifie la disposition pour que l'image soit en haut et le texte en bas */
+  .content-div {
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments horizontalement */
+    padding: 0 5%; /* Réduction des espacements latéraux pour plus de largeur */
+  }
+  
+  /* S'assurer que l'image prend toute la largeur */
+  .image-content img {
+    width: 100%; /* Image prend toute la largeur de l'écran */
+    max-width: none; /* Désactiver la limite de la largeur maximale */
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Réajuster la taille et la position du texte */
+  .text-content {
+    width: 100%; /* Le texte occupe toute la largeur disponible */
+    text-align: center; /* Centrer le texte */
+  }
+
+  /* Centrer le bouton en bas du texte */
+  .btn-accueil {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centrer le bouton horizontalement */
+  }
+
+  /* Ajuster l'alignement pour les sections */
+  .content-div.reverse {
+    flex-direction: column-reverse; /* Inverser l'ordre du texte et de l'image */
+  }
+
+  /* Centrer la bannière */
+  .banner {
+    text-align: center; /* Centrer le texte dans la bannière */
+  }
+
+  /* Modifier l'animation pour les petits écrans */
+  .scroll-animation {
+    opacity: 1;
+    transform: translateY(0); /* Supprimer l'animation de scroll */
+    transition: none; /* Désactiver la transition */
+  }
+
+  /* Optionnel : Appliquer des tailles plus petites pour les titres et paragraphes */
+  .text-title {
+    font-size: 1.5rem;
+  }
+  
+  .text-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .text-paragraph {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  /* Réduire les espacements entre les sections */
+  .content-div {
+    margin-bottom: 20px; /* Espacement réduit entre les sections */
+  }
+
+  /* Réduire la largeur des sections */
+  .content-div .text-content,
+  .content-div .image-content {
+    width: 90%; /* Réduire la largeur des éléments dans chaque section */
+  }
+}

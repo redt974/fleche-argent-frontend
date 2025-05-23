@@ -1,0 +1,175 @@
+.hero-section {
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('https://cdn.prod.website-files.com/5faeb38cb5f86b4868288cce/65cded0c8ebbb6084148d1fa_Appartement%20Monceau%20room-min-p-2000.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  
+  .rooms-section {
+    background-color: white;
+    padding: 4rem 0;
+  }
+  
+  .rooms-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  
+  @media (max-width: 1024px) {
+    .rooms-grid {
+      grid-template-columns: 1fr;
+      max-width: 600px;
+    }
+  }
+  
+  .room-card {
+    background: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .room-image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-wrapper {
+    position: absolute;
+    inset: 0;
+  }
+  
+  .room-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    background-color: #ffebcd00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .slider-button:hover{
+    background-color: #ffebcd00;
+  }
+  
+  .slider-button-left {
+    left: 1rem;
+  }
+  
+  .slider-button-right {
+    right: 1rem;
+  }
+  
+  .slider-dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .slider-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s;
+    padding: 0;
+    border: none;
+  }
+  
+  .slider-dot.active {
+    background-color: white;
+  }
+  
+  .room-info {
+    padding: 1.5rem;
+  }
+  
+  .room-type {
+    color: #B19B6E;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .room-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .room-description {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .room-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+  }
+  
+  .room-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .room-price {
+    color: #1a1a1a;
+  }
+  
+  .price-amount {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .price-period {
+    color: #666;
+  }
+  
+  .book-button {
+    background-color: #B19B6E;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  

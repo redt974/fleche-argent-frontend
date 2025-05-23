@@ -1,0 +1,122 @@
+/* Conteneur du calendrier */
+.calendar-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* En-tête du calendrier */
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .btn-calendar {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #d4af37;
+    transition: color 0.3s;
+  }
+  
+  .btn-calendar:hover {
+    color: #b8922e;
+    background-color: #ffffff00;
+  }
+  
+  .month-year {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Conteneur de la grille du calendrier */
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+  }
+  
+  /* En-tête des jours de la semaine */
+  .calendar-day-header {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    padding: 5px;
+    background-color: #d4af37;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  /* Jours du calendrier */
+  .calendar-day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .calendar-day:hover {
+    background-color: #f0e5c9;
+  }
+  
+  /* Jour sélectionné */
+  .calendar-day.selected {
+    background-color: #d4af37;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .calendar-day.selected:hover {
+    background-color: #b8922e;
+  }
+  
+  /* Jour réservé (indisponible) */
+  .calendar-day.booked {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .calendar-day.booked:hover {
+    background-color: #ccc;
+  }
+  
+  /* Jour vide */
+  .calendar-day.empty {
+    background-color: transparent;
+  }
+  
+  /* Tag de prix (pour les jours réservés) */
+  .price-tag {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #d4af37;
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  
+  /* Erreur */
+  .calendar-error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+  }
+  

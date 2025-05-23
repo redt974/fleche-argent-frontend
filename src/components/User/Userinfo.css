@@ -1,0 +1,104 @@
+/* Conteneur principal */
+.update-user-form-container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(248, 232, 212, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+  }
+  
+  /* Titre de la page */
+  .update-user-form-title {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(199, 172, 113);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  /* Formulaire */
+  .update-user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Groupes de champs */
+  .update-user-form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Libellés */
+  .update-user-label {
+    font-size: 1rem;
+    color: #555;
+    font-family: "Merriweather", serif;
+    margin-bottom: 5px;
+    font-weight: 400;
+  }
+  
+  /* Champs de saisie */
+  .update-user-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid rgba(199, 172, 113, 0.8);
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .update-user-input:focus {
+    border-color: rgb(199, 172, 113);
+    box-shadow: 0 0 5px rgba(199, 172, 113, 0.5);
+    outline: none;
+  }
+  
+  /* Bouton de soumission */
+  .update-user-submit-button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    background-color: rgb(199, 172, 113);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-user-submit-button:hover {
+    background-color: rgb(170, 150, 90);
+  }
+  
+  .update-user-submit-disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  /* Style pour les petits écrans */
+  @media (max-width: 500px) {
+    .update-user-form-container {
+      padding: 20px;
+    }
+  
+    .update-user-form-title {
+      font-size: 1.5rem;
+    }
+  
+    .update-user-input {
+      font-size: 0.9rem;
+    }
+  
+    .update-user-submit-button {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  }
+  

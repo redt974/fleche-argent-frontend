@@ -1,0 +1,90 @@
+.formulaire.inscription {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 100px 20px 20px 20px; 
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulaire.inscription h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.formulaire.inscription label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.formulaire.inscription input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formulaire.inscription input[type="checkbox"] {
+    width: auto;
+}
+
+.formulaire.inscription button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.formulaire.inscription button:hover {
+    background-color: #0056b3;
+}
+
+.formulaire.inscription a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9rem;
+}
+
+.formulaire.inscription a:hover {
+    text-decoration: underline;
+}
+
+.formulaire.inscription .juridique {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.formulaire.inscription .juridique a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.formulaire.inscription .juridique p {
+    display: inline;
+    margin: 0 5px;
+    color: #666;
+}
+
+.formulaire.inscription .form-group {
+    margin-bottom: 15px;
+}
+
+.formulaire.inscription .alert-message {
+    color: orange;
+}
+
+.formulaire.inscription .error-message {
+    color: red;
+}
+
+.formulaire.inscription .success-message {
+    color: green;
+}
